@@ -10,8 +10,13 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        
+        InputCollector *input = [[InputCollector alloc]init];
+        
+        NSString *usernameInput = [inputCollector inputForPrompt:@"Enter your username"];
+
     }
     return 0;
 }
+//Back in our main.m, alloc and init an instance of the InputCollector class, and use it's one method to display your menu, and capture the result in a local variable.
+//
